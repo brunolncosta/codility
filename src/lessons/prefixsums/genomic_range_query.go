@@ -1,7 +1,6 @@
 package prefixsums
 
-// Solution The solution is based in prefix sum and counting technics.
-// Mapping when a letter appears
+// Solution is based in prefix sum and counting technics.
 func Solution(S string, P []int, Q []int) []int {
 	N := len(S)
 	M := len(P)
