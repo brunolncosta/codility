@@ -1,6 +1,6 @@
 package prefixsums
 
-// Solution is based in prefix sum and counting technics.
+// Solution is based in counting technics.
 func Solution(S string, P []int, Q []int) []int {
 	N := len(S)
 	M := len(P)
