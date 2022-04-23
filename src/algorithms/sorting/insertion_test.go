@@ -1,4 +1,4 @@
-package algoritms
+package sorting
 
 import (
 	"github.com/stretchr/testify/assert"

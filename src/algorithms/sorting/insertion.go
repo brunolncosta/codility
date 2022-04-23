@@ -1,4 +1,4 @@
-package algoritms
+package sorting
 
 // InsertionSort Very simple sort algorithms
 // It consists in iterate an array and switching the next value with the previously sorted values if needed

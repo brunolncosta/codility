@@ -1,4 +1,4 @@
-package algoritms
+package sorting
 
 // SelectionSort
 // It consists in iterate thw whole array over and over

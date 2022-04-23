@@ -1,4 +1,4 @@
-package algoritms
+package sorting
 
 // BubbleSort Very simple sort algorithms
 // It consists in reverse iterate the array and reserve position if needed.
