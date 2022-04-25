@@ -19,7 +19,7 @@ func Test_BubbleSort(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		real := BubbleSort(test.args)
-		assert.Equal(t, test.want, real)
+		sorted := BubbleSort(test.args)
+		assert.Equal(t, test.want, sorted)
 	}
 }

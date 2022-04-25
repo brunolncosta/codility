@@ -19,7 +19,7 @@ func Test_SelectionSort(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		real := SelectionSort(test.args)
-		assert.Equal(t, test.want, real)
+		sorted := SelectionSort(test.args)
+		assert.Equal(t, test.want, sorted)
 	}
 }

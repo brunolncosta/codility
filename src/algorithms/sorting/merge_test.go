@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_InsertionSort(t *testing.T) {
+func Test_MergeSort(t *testing.T) {
 	tests := []struct {
 		name string
 		args []int
@@ -19,7 +19,7 @@ func Test_InsertionSort(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		sorted := InsertionSort(test.args)
+		sorted := MergeSort(test.args)
 		assert.Equal(t, test.want, sorted)
 	}
 }
