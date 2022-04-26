@@ -1,4 +1,4 @@
-package equilieader
+package equileader
 
 func Solution(A []int) int {
 	leader := -1
