@@ -1,4 +1,4 @@
-package maxslice
+package maxprofit
 
 func Solution(A []int) int {
 	if len(A) <= 1 {
