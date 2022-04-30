@@ -1,4 +1,4 @@
-package datascructures
+package trie
 
 import (
 	"errors"
