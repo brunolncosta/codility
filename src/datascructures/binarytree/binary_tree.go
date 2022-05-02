@@ -76,6 +76,14 @@ func (tree Tree) GetLeftView() []int {
 	return result
 }
 
+func (tree *Tree) Revert() {
+	tree.root.revert()
+}
+
+func (tree Tree) GetButtonView() []int {
+	return tree.root.getButtonView()
+}
+
 type Node struct {
 	level       int
 	value       int
@@ -133,4 +141,37 @@ func (node Node) getLeftView(leftView *[]int) {
 	if node.right != nil {
 		node.right.getLeftView(leftView)
 	}
+}
+
+func (node *Node) revert() {
+	if node.left != nil {
+		node.left.revert()
+	}
+
+	if node.right != nil {
+		node.right.revert()
+	}
+
+	aux := node.right
+	node.right = node.left
+	node.left = aux
+}
+
+func (node *Node) getButtonView() []int {
+
+	var left []int
+	if node.left != nil {
+		left = node.left.getButtonView()
+	}
+
+	var right []int
+	if node.right != nil {
+		right = node.right.getButtonView()
+	}
+
+	buttonView := make([]int, 0)
+	buttonView = append(buttonView, left...)
+	buttonView = append(buttonView, node.value)
+	buttonView = append(buttonView, right...)
+	return buttonView
 }
